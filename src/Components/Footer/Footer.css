@@ -1,0 +1,127 @@
+.footer {
+  color: #333;
+  padding: 1vw 4vw;
+ margin-top: 50px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Permite ajustar las secciones */
+  gap: 20px; /* Espacio entre las secciones */
+}
+
+/* Estilos para las secciones del footer */
+.footer-section {
+  flex: 1; /* Distribución equitativa */
+  min-width: 200px; /* Mínimo ancho para prevenir compresión extrema */
+}
+
+.footer-section h3,
+.footer-section h1 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.logo {
+  font-size: 1.8em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+ 
+
+.footer-text {
+  font-size: 0.9em;
+  line-height: 1.5;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 8px;
+  font-size: 0.9em;
+}
+
+.footer-links li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.footer-links a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #00bfa5;
+  text-decoration: underline;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: #00bfa5;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  background: #00a892;
+  transform: translateY(-2px);
+}
+
+/* Estilo para la parte inferior */
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.8em;
+}
+
+.footer-bottom hr {
+  border: 0.5px solid #ddd;
+  margin: 10px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column; /* Las secciones se apilan */
+    text-align: center; /* Centra el texto */
+  }
+
+  .footer-section {
+    margin-bottom: 20px; /* Separación entre secciones */
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-section h3,
+  .footer-section h1 {
+    font-size: 1.1em;
+  }
+
+  .footer-text,
+  .footer-links li {
+    font-size: 0.85em;
+  }
+
+  .logo {
+    font-size: 1.5em;
+  }
+}

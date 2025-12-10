@@ -1,0 +1,213 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 4vw;
+  background-color: rgb(255, 255, 255); /* Fondo translúcido */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #00bfa5;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo-icon {
+  height: 50px;
+  width: 50px;
+  object-fit: contain;
+}
+
+.logo span {
+  color: #000;
+}
+
+.navbar {
+  flex: 1;
+  margin-left: 2rem;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #555;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #00bfa5;
+  transform: scale(1.05);
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+
+.search-button,
+.icon-button,
+.login-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: #333;
+  transition: color 0.2s ease;
+}
+
+.user-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  transition: color 0.2s ease;
+  color: #000 !important;
+}
+
+.user-button i {
+  color: #000 !important;
+  font-size: 20px;
+}
+
+.search-button:hover,
+.icon-button:hover,
+.login-button:hover {
+  color: #00bfa5;
+}
+
+.icon-button {
+  position: relative;
+  display: inline-block;
+}
+
+.counter {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  color: #fff;
+  background-color: #00bfa5;
+}
+
+.login-button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 8px 12px;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  font-size: 14px;
+  color: #333;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.login-button:hover {
+  background-color: #00bfa5;
+  color: white;
+}
+
+.user-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: #333;
+  transition: color 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.user-button:hover {
+  color: #00bfa5;
+}
+
+.user-name {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  transition: color 0.2s ease;
+  max-width: 120px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.user-button:hover .user-name {
+  color: #00bfa5;
+}
+
+.user-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.logout-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  min-width: 150px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  margin-top: 8px;
+  z-index: 1000;
+  animation: slideDown 0.2s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.logout-btn {
+  width: 100%;
+  padding: 12px 16px;
+  border: none;
+  background: none;
+  color: #333;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: left;
+  transition: all 0.2s ease;
+  border-radius: 6px;
+}
+
+.logout-btn:hover {
+  background-color: #f5f5f5;
+  color: #00bfa5;
+}

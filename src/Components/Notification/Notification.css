@@ -1,0 +1,93 @@
+/* General */
+.notification {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 300px;
+  background-color: #f2fef5; 
+  color: #333; 
+  padding: 15px 20px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  overflow: hidden;
+  border: 1px solid transparent; 
+  animation: fadeInOut 3s ease-in-out;
+}
+
+.notification-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.notification i {
+  font-size: 1.5rem; 
+}
+
+.notification span {
+  flex: 1;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.notification-success {
+  border-color: #4caf50;
+  background-color: #e8f5e9;
+}
+
+.notification-error {
+  border-color: #f44336;
+  background-color: #ffebee;
+}
+
+.notification-warning {
+  border-color: #ff9800;
+  background-color: #fff3e0;
+}
+
+.notification-progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 5px;
+  width: 100%;
+  animation: progressBar 3s linear;
+}
+
+.notification-progress-success {
+  background-color: #4caf50;
+}
+
+.notification-progress-error {
+  background-color: #f44336;
+}
+
+.notification-progress-warning {
+  background-color: #ff9800;
+}
+
+@keyframes progressBar {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0%;
+  }
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  10%,
+  90% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "correo": "tellezjorgeariel@gmail.com",
+      "contraseña": "admin123",
+      "nombre": "Ariel Tellez",
+      "tipo": "admin"
+    }
+  ]
+}
